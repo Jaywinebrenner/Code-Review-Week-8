@@ -20,9 +20,13 @@
   <div class="form-group">
     <input id="definition_name" name="definition_name" class="form-control" type="text">
   </div>
-  <button type="submit" class="main-button">Add definition</button>
+  <button type="submit" class="main-button add-definition">Add definition</button>
 </form>
 
+<form action="/words/<%= @word.id %>/edit">
+    <button type="submit" class="main-button">Edit Word</button>
+</form>
 
-<p><a href="/words/<%= @word.id %>/edit">Edit word</a></p>
+<!-- <p><a href="/words/<%= @word.id %>/edit">Edit word</a></p> -->
+
 <a href="/words">Return to word list</a>

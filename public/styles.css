@@ -2,6 +2,9 @@
 * {
   font-family: 'Chilanka', cursive;
 }
+.add-definition{
+  margin: 0 0 60px 0;
+}
 
 .main-button {
   padding: 15px 25px !important;
@@ -17,6 +20,7 @@
   padding-left: 100px !important;
 
 }
+
 
 body {
   background-color: #ffffff;
