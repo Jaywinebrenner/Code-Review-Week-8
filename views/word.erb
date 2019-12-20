@@ -6,10 +6,13 @@
 <% if @word.definitions %>
     <% @word.definitions.each do |definition| %>
       <p><a href="/words/<%= @word.id %>/definitions/<%= definition.id %>"><%= definition.name %></a></p>
+
     <% end %>
 <% else %>
   <p>There are no definitions listed for this word yet.</p>
 <% end %>
+
+
 
 <h4>Add a definition:</h4>
 

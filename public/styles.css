@@ -1,14 +1,11 @@
 
-h1 {
+* {
   font-family: 'Chilanka', cursive;
 }
-/* * {
-  font-family: 'Montserrat', sans-serif;
-} */
 
 .main-button {
   padding: 15px 25px !important;
-  background-color: #0C8E70;
+  background-color: #4f98ca;
   text-decoration: none !important;
   color: white !important;
 }
@@ -19,4 +16,8 @@ h1 {
   padding-right: 100px !important;
   padding-left: 100px !important;
 
+}
+
+body {
+  background-color: blue;
 }
