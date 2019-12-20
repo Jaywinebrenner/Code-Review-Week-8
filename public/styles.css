@@ -1,6 +1,10 @@
-* {
-  font-family: 'Montserrat', sans-serif;
+
+h1 {
+  font-family: 'Chilanka', cursive;
 }
+/* * {
+  font-family: 'Montserrat', sans-serif;
+} */
 
 .main-button {
   padding: 15px 25px !important;
