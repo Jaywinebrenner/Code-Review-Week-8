@@ -78,27 +78,25 @@ describe '#Definition' do
         expect(Definition.all).to(eq([definition2]))
       end
     end
-  #
-  #   describe('.find_by_word') do
-  #     it("finds definitions for a word") do
-  #       word2 = Word.new("Ballet Word", nil, "San Francisco")
-  #       word2.save
-  #       definition = Definition.new("excessive indulgence in sensual pleasures.", @word.id, nil)
-  #       definition.save()
-  #       definition2 = Definition.new("the rejection of all religious and moral principles, in the belief that life is meaningless.", word2.id, nil)
-  #       definition2.save()
-  #       expect(Definition.find_by_word(word2.id)).to(eq([definition2]))
-  #     end
-  #   end
-  #
-  #   describe('#word') do
-  #     it("finds the word an definition belongs to") do
-  #       definition = Definition.new("Naima", @word.id, nil)
-  #       definition.save()
-  #       expect(definition.word()).to(eq(@word))
-  #     end
-  #   end
 
+    describe('.find_by_word') do
+      it("finds definitions for a word") do
+        word2 = Word.new("Nihilism", nil)
+        word2.save
+        definition = Definition.new("excessive indulgence in sensual pleasures.", @word.id, nil)
+        definition.save()
+        definition2 = Definition.new("the rejection of all religious and moral principles, in the belief that life is meaningless.", word2.id, nil)
+        definition2.save()
+        expect(Definition.find_by_word(word2.id)).to(eq([definition2]))
+      end
+    end
 
+    describe('#word') do
+      it("finds the word an definition belongs to") do
+        definition = Definition.new("excessive indulgence in sensual pleasures.", @word.id, nil)
+        definition.save()
+        expect(definition.word()).to(eq(@word))
+      end
+    end
 
 end

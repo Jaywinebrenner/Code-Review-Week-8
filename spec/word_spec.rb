@@ -73,15 +73,15 @@ describe '#Word' do
     end
   end
 
-  # describe('#definitions') do
-  #     it("returns an album's songs") do
-  #       word = Word.new("Nihilism", nil)
-  #       word.save()
-  #       definition = Artist.new("Naima", album.id, nil)
-  #       definition.save()
-  #       definition2 = Artist.new("Cousin Mary", album.id, nil)
-  #       definition2.save()
-  #       expect(word.definitions).to(eq([definition, definition2]))
-  #     end
-  #   end
+  describe('#definitions') do
+      it("returns an album's songs") do
+        word = Word.new("Nihilism", nil)
+        word.save()
+        definition = Definition.new("Naima", album.id, nil)
+        definition.save()
+        definition2 = Definition.new("Cousin Mary", album.id, nil)
+        definition2.save()
+        expect(word.definitions).to(eq([definition, definition2]))
+      end
+    end
 end
