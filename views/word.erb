@@ -1,8 +1,7 @@
-<h2>Word Name: <%= @word.name %></h2>
+<h1><%= @word.name %></h1>
 
 <br>
 
-<h2>Word Definitions</h2>
 
 <% if @word.definitions %>
     <% @word.definitions.each do |definition| %>
@@ -16,7 +15,6 @@
 
 <form action="/words/<%= @word.id %>/definitions" method="post">
   <div class="form-group">
-    <label for="definition_name">Definition name</label>
     <input id="definition_name" name="definition_name" class="form-control" type="text">
   </div>
   <button type="submit" class="main-button">Add definition</button>
