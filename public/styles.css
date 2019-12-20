@@ -2,9 +2,13 @@
 * {
   font-family: 'Chilanka', cursive;
 }
+.delete{
+  margin-top: 560px;
+}
 .add-definition{
   margin: 0 0 60px 0;
 }
+
 
 .main-button {
   padding: 15px 25px !important;
@@ -80,5 +84,5 @@ h1{
 }
 
 .r2{
-  color: #7cb2cc;
+  color: #db553e;
 }
