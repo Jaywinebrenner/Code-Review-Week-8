@@ -5,6 +5,23 @@ require('pry')
 also_reload('lib/**/*.rb')
 require('./lib/definition')
 
+word = Word.new("Nihilism", nil)
+word.save
+definition = Definition.new("The rejection of all religious and moral principles, in the belief that life is meaningless.", word.id, nil)
+definition.save()
+
+word2 = Word.new("Debauchery", nil)
+word2.save
+definition2 = Definition.new("Excessive indulgence in sensual pleasures.", word2.id, nil)
+definition2.save()
+
+word3 = Word.new("Totalitarianism", nil)
+word3.save
+definition3 = Definition.new("A system of government that is centralized and dictatorial and requires complete subservience to the state.", word3.id, nil)
+definition3.save()
+
+
+
 get('/') do
   @words = Word.all
   erb(:words)
@@ -20,6 +37,7 @@ get('/words/new') do
 end
 
 post('/words') do
+
   name = params[:word_name]
   word = Word.new(name, nil)
   word.save()

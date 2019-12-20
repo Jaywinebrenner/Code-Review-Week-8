@@ -1,19 +1,30 @@
 
-* {
+*{
   font-family: 'Chilanka', cursive;
 }
-.delete{
+
+#gif{
   margin-top: 50px;
 }
+
+#delete{
+  margin-top: 70px;
+  background-color: #db553e;
+}
+
 .add-definition{
   margin: 0 0 60px 0;
+}
+
+#edit-button{
+  background-color: #134c67;
 }
 
 img{
   width: 180px;
 }
 
-.main-button {
+.main-button{
   padding: 15px 25px !important;
   background-color: #4f98ca;
   text-decoration: none !important;
@@ -23,23 +34,20 @@ img{
 .return-button{
   margin-top: 30px;
 }
-.container {
+.container{
   padding-top: 5px;
   text-align:center;
   padding-right: 100px !important;
   padding-left: 100px !important;
-
 }
 
-
-
-body {
+body{
   background-color: #ffffff;
 }
 
 
 h1{
-  font-size: 8rem;
+  font-size: 7rem;
 }
 
 .t{
