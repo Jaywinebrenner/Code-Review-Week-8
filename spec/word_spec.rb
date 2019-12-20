@@ -8,7 +8,6 @@ describe '#Word' do
     # Definition.clear()
   end
 
-
   describe('#==') do
     it("is the same word if it has the same attributes as another word") do
       word = Word.new("Nihilism", nil)
