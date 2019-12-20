@@ -1,23 +1,15 @@
+
 <h1><%= @word.name %></h1>
 
 <br>
 
 <% if @word.definitions.any? %>
     <% @word.definitions.each do |definition| %>
-      <p><a href="/words/<%= @word.id %>/definitions/<%= definition.id %>"><%= definition.name %></a></p>
+      <h2><a href="/words/<%= @word.id %>/definitions/<%= definition.id %>"><%= definition.name %></a></h2>
 
     <% end %>
 <% else %>
   <p>There are no definitions listed for this word yet.</p>
-<% end %>
-
-
-
-
-
-
-
-
 
 
 <h4>Add a definition:</h4>
@@ -33,6 +25,10 @@
     <button type="submit" class="main-button">Edit Word</button>
 </form>
 
+<% end %>
 <!-- <p><a href="/words/<%= @word.id %>/edit">Edit word</a></p> -->
 
-<a href="/words">Return to word list</a>
+
+<form action="/words">
+    <button type="submit" class="return-button main-button">Return to word list</button>
+</form>
