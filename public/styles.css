@@ -19,5 +19,62 @@
 }
 
 body {
-  background-color: blue;
+  background-color: #ffffff;
+}
+
+
+h1{
+  font-size: 8rem;
+}
+
+.t{
+  color: #134c67;
+}
+
+.h{
+  color: #7cb2cc;
+}
+
+.e1{
+  color:#db553e;
+}
+
+.w{
+  color: #ecca60;
+}
+
+.o{
+  color: #636363;
+}
+
+.r1{
+  color: #134c67;
+}
+
+.d{
+  color: #7cb2cc;
+}
+
+.e2{
+  color: #db553e;
+}
+
+.f{
+  color: #db553e;
+}
+
+.i{
+  color: #ecca60;
+}
+
+.n{
+  color: #636363;
+}
+
+.e3{
+  color: #134c67;
+}
+
+.r2{
+  color: #7cb2cc;
 }

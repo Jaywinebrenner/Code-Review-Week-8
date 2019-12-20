@@ -5,7 +5,7 @@ describe '#Word' do
 
   before(:each) do
     Word.clear()
-    # Definition.clear()
+    Definition.clear()
   end
 
   describe('#==') do
@@ -74,12 +74,12 @@ describe '#Word' do
   end
 
   describe('#definitions') do
-      it("returns an album's songs") do
+      it("returns a word's definition") do
         word = Word.new("Nihilism", nil)
         word.save()
-        definition = Definition.new("Naima", album.id, nil)
+        definition = Definition.new("the rejection of all religious and moral principles, in the belief that life is meaningless.", word.id, nil)
         definition.save()
-        definition2 = Definition.new("Cousin Mary", album.id, nil)
+        definition2 = Definition.new("excessive indulgence in sensual pleasures.", word.id, nil)
         definition2.save()
         expect(word.definitions).to(eq([definition, definition2]))
       end
