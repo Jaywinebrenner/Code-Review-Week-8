@@ -1,0 +1,18 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-button {
+  padding: 15px 25px !important;
+  background-color: #0C8E70;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.container {
+  padding-top: 80px;
+  text-align:center;
+  padding-right: 100px !important;
+  padding-left: 100px !important;
+
+}
