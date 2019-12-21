@@ -21,7 +21,6 @@ definition3 = Definition.new("A system of government that is centralized and dic
 definition3.save()
 
 
-
 get('/') do
   @words = Word.all
   erb(:words)
@@ -37,7 +36,6 @@ get('/words/new') do
 end
 
 post('/words') do
-
   name = params[:word_name]
   word = Word.new(name, nil)
   word.save()
@@ -51,15 +49,15 @@ get('/words/:id') do
 end
 
 get('/words/:id/edit') do
-@word = Word.find(params[:id].to_i())
-erb(:edit_word)
+  @word = Word.find(params[:id].to_i())
+  erb(:edit_word)
 end
 
 patch('/words/:id') do
-@word  = Word.find(params[:id].to_i())
-@word.update(params[:name])
-@words = Word.all
-erb(:words)
+  @word  = Word.find(params[:id].to_i())
+  @word.update(params[:name])
+  @words = Word.all
+  erb(:words)
 end
 
 delete('/words/:id') do

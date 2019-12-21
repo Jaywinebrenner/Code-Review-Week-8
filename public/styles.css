@@ -4,12 +4,17 @@
 }
 
 #gif{
-  margin-top: 50px;
+  margin-top: 0;
+  width: 200px;
 }
 
 #delete{
   margin-top: 70px;
   background-color: #db553e;
+}
+
+#wordbutton{
+
 }
 
 .add-definition{
@@ -21,6 +26,7 @@
 }
 
 img{
+  margin-top: 50px;
   width: 180px;
 }
 
@@ -39,6 +45,7 @@ img{
   text-align:center;
   padding-right: 100px !important;
   padding-left: 100px !important;
+  margin-bottom: 0;
 }
 
 body{
