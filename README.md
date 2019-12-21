@@ -10,7 +10,7 @@ A web application that allows users to create words, define words, edit words an
 
 #### Zip:
 
-Navitage to the live site hosted at Heroku [HERE](https://www.google.com)
+Navitage to the live site hosted at Heroku [HERE](https://glacial-atoll-00914.herokuapp.com/)
 
 ### Specifications:
 
