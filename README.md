@@ -16,7 +16,6 @@ Navigate to the live site hosted at Heroku [HERE](https://glacial-atoll-00914.he
 
 |Input|Output|
 |---|---|
-|Player A rolls a 1| Turn over, Turn Total is 0, Total Score is 0, Player B's turn.|
 |---|---|
 |---|---|
 |---|---|
