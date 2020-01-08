@@ -38,6 +38,11 @@ class Word
     @@words.delete(self.id)
   end
 
+  def self.sorter
+    @@words.values.sort_by { |word| word.name}
+  end
+
+
   def definitions
     Definition.find_by_word(self.id)
   end

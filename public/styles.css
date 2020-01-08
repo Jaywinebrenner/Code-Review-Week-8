@@ -3,6 +3,19 @@
   font-family: 'Chilanka', cursive;
 }
 
+#bubble-only{
+  display: inline;
+}
+
+/* #bubble-input{
+  position: relative;
+  top: 540px;
+} */
+
+#sort-button{
+  display: inline;
+}
+
 #gif{
   margin-top: 0;
   width: 200px;
@@ -25,9 +38,10 @@
   background-color: #134c67;
 }
 
-img{
+#kermit{
+  display: inline;
   margin-top: 50px;
-  width: 180px;
+  width: 190px;
 }
 
 .main-button{
@@ -46,6 +60,7 @@ img{
   padding-right: 100px !important;
   padding-left: 100px !important;
   margin-bottom: 0;
+  position: relative;
 }
 
 body{
