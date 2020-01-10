@@ -16,15 +16,13 @@ end
 
 describe('create a definition path', {:type => :feature}) do
   it('creates a word and then goes to the word page') do
-    word = Word.new("Debauchery", nil)
-    word.save
-    visit("/words/#{word.id}")
-    fill_in('definition_name', :with => 'excessive indulgence in sensual pleasures.')
+    visit('/words')
+    click_on('Nihilism')
+    fill_in('definition_name', :with => 'The rejection of all religious and moral principles, in the belief that life is meaningless.')
     click_on('Add definition')
-    expect(page).to have_content('excessive indulgence in sensual pleasures.')
+    expect(page).to have_content('The rejection of all religious and moral principles, in the belief that life is meaningless.')
   end
 end
-
 
 describe('delete a word', {:type => :feature}) do
   it('deletes a word') do
@@ -39,28 +37,28 @@ describe('delete a word', {:type => :feature}) do
   end
 end
 
-
-# Unable to find link or button "Delete definition"
 describe('delete a definition', {:type => :feature}) do
   it('deletes a definition') do
     visit('/words')
     click_on('Nihilism')
-    visit("/words/1/definition/1")
+    click_on('The rejection of all religious and moral principles, in the belief that life is meaningless.')
     click_on('Delete definition')
-    click_on("Nihilism")
     expect(page).to have_no_content("The rejection of all religious and moral principles, in the belief that life is meaningless.")
   end
 end
 
-
-# unable to find definition name
 describe('Update', {:type => :feature}) do
   it('will navigate to the update definition page and change the definition') do
+    word = Word.new("Fish Breath", nil)
+    word.save
+    definition = Definition.new("Liquid gas and good times.", word.id, nil)
+    definition.save
     visit('/words')
-    click_on('Nihilism')
-    visit('/words/1/definition/1')
-    fill_in('definition_name', :with => 'Party Time')
-    click_on('Update Definition')
-    expect(page).to have_content("Party Time")
+    click_on('Fish Breath')
+    click_on('Liquid gas and good times.')
+    fill_in('name', :with => 'Solid gas and an okay time.')
+    click_on('Update')
+    # binding.pry
+    expect(page).to have_content("Solid gas and an okay time.")
   end
 end
