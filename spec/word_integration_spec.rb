@@ -25,7 +25,7 @@ describe('create a definition path', {:type => :feature}) do
 end
 
 describe('delete a word', {:type => :feature}) do
-  it('deletes a word') do
+  it('will delete a word') do
     visit('/words')
     click_on('Add')
     fill_in('word_name', :with => 'Tooth')
@@ -38,7 +38,7 @@ describe('delete a word', {:type => :feature}) do
 end
 
 describe('delete a definition', {:type => :feature}) do
-  it('deletes a definition') do
+  it('will delete a definition') do
     visit('/words')
     click_on('Nihilism')
     click_on('The rejection of all religious and moral principles, in the belief that life is meaningless.')
